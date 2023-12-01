@@ -1,4 +1,4 @@
-FROM ruby:alpine as jekyll                # Alpine linux running ruby latest as user jekyll
+FROM ruby:3.2.2-alpine3.18 as jekyll                # Alpine linux running ruby latest as user jekyll
 
 RUN apk add --no-cache build-base gcc bash cmake git  # Install some liux binaries.
 
